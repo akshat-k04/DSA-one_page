@@ -8,7 +8,11 @@ const HomePage = () => {
         // { name: 'Linked Lists', file: 'linked-lists' },
         // { name: 'Trees', file: 'trees' },
         { name: 'Graph', file: 'graph'},
-        { name: 'tree', file: 'tree' }
+        {name: 'DSU', file:'DSU'},
+        {name:'trie', file:'trie'},
+        { name: 'segment tree', file: 'segment_tree' },
+        { name: 'tree', file: 'tree' },
+        { name: 'unsolved questions', file: 'unsolved_questions' }
         // Add more topics as needed
     ];
 

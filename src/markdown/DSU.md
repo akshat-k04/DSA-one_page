@@ -1,6 +1,4 @@
-Here’s the DSU (Disjoint Set Union) implementation in markdown format, along with a detailed explanation:
 
-```markdown
 # Disjoint Set Union (DSU) Implementation
 
 ## Overview
@@ -118,6 +116,3 @@ int main() {
 
 ## Example Usage
 In the `main()` function, a DSU object is created with 10 elements. The `union_set` and `find` functions can be used to manipulate and query the disjoint sets.
-```
-
-This markdown format combines code and explanations for easy reference and revision.

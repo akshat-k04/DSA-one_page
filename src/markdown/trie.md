@@ -1,6 +1,4 @@
-Here’s the implementation of the Trie in markdown format with detailed explanations:
 
-```markdown
 # Trie Data Structure Implementation
 
 ## Overview

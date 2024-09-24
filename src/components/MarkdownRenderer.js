@@ -1,7 +1,9 @@
 // src/components/MarkdownRenderer.js
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../index.css'; // Import the stylesheet
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import '../index.css';
 
 const MarkdownRenderer = ({ fileName }) => {
     const [content, setContent] = useState('');
@@ -16,7 +18,29 @@ const MarkdownRenderer = ({ fileName }) => {
 
     return (
         <div className="markdown-content">
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown
+                components={{
+                    code({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '');
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                style={vscDarkPlus}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            >
+                                {String(children).replace(/\n$/, '')}
+                            </SyntaxHighlighter>
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        );
+                    },
+                }}
+            >
+                {content}
+            </ReactMarkdown>
         </div>
     );
 };

@@ -1,0 +1,8 @@
+   - N-Queens Problem
+   - **Sudoku Solver**
+   - **Rat in a Maze**
+   - **Knight’s Tour Problem**
+   - **Subset Generation**
+   - **Permutations and Combinations**
+   - **Word Search Problem**
+   - **M Coloring Problem**

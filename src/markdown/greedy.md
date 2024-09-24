@@ -1,0 +1,6 @@
+- Activity Selection Problem
+   - **Fractional Knapsack Problem**
+   - **Job Sequencing Problem**
+   - **Huffman Coding**
+   - **Minimum Number of Platforms Required**
+   - **Interval Scheduling Maximization**

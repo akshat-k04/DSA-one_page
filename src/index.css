@@ -37,7 +37,7 @@ ul {
 }
 
 ul li {
-  background-color: #3498db;
+  background-color: #233c4d;
   color: white;
   padding: 10px;
   margin: 5px 0;
@@ -47,7 +47,7 @@ ul li {
 }
 
 ul li:hover {
-  background-color: #2980b9;
+  background-color: #1e3646;
 }
 
 /* Markdown Styling */
